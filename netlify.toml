@@ -1,0 +1,19 @@
+[build]
+  publish = "public"
+  functions = "api/netlify/functions"
+  command = "cd api/netlify && npm install"
+
+[[redirects]]
+  from = "/api/subscriptions/new"
+  to = "/.netlify/functions/new-subscription"
+  status = 200
+
+[[redirects]]
+  from = "/api/accounts/new"
+  to = "/.netlify/functions/new-account"
+  status = 200
+
+[[redirects]]
+  from = "/api/accounts/:account"
+  to = "/.netlify/functions/update-account/:account"
+  status = 200

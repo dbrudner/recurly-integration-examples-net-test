@@ -1,6 +1,8 @@
 /api/php/vendor/
+/api/netlify/node_modules/
 /api/node/node_modules/
 /api/php/composer.phar
 /api/java/.java-version
 /api/java/target
 /electron/node_modules/
+node_modules
