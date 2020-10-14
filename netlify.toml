@@ -10,6 +10,11 @@
   ERROR_URL = "Redirect URL for new subscription error"
 
 [[redirects]]
+  from = "/config"
+  to = "/.netlify/functions/config"
+  status = 200
+
+[[redirects]]
   from = "/api/subscriptions/new"
   to = "/.netlify/functions/new-subscription"
   status = 200
