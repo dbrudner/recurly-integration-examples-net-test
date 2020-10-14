@@ -3,6 +3,12 @@
   functions = "api/netlify/functions"
   command = "cd api/netlify && npm install"
 
+[template.environment]
+  RECURLY_API_KEY = "The PRIVATE key from https://app.recurly.com/go/integrations/api_keys"
+  RECURLY_PUBLIC_KEY = "The PUBLIC key from https://app.recurly.com/go/integrations/api_keys"
+  SUCCESS_URL = "Where your customers will be redirected if their subscription is successfully created"
+  ERROR_URL = "Where your customers will be redirected if there is a problem with their submission"
+
 [[redirects]]
   from = "/api/subscriptions/new"
   to = "/.netlify/functions/new-subscription"
